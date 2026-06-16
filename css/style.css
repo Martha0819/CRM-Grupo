@@ -2,14 +2,20 @@
    VARIABLES & DESIGN SYSTEM
    ========================================= */
 :root {
-    /* Color Palette */
-    --bg-primary: #F8FAFC; /* Fondo Principal */
-    --bg-card: #FFFFFF; /* Tarjetas */
-    --color-primary: #2563EB; /* Azul Principal */
-    --color-primary-light: #DBEAFE; /* Azul Secundario */
-    --color-primary-dark: #1D4ED8; 
-    --text-main: #0F172A; /* Texto Principal */
-    --text-muted: #475569; /* Texto Secundario */
+    /* Color Palette (Autocorp Brand) */
+    --color-primary: #FF2323;
+    --color-primary-hover: #E61E1E;
+    --color-primary-light: rgba(255, 35, 35, 0.08);
+    --color-secondary: #3B4051;
+    --color-accent: #42495B;
+    --color-accent-light: rgba(66, 73, 91, 0.08);
+    
+    /* Backgrounds & Text */
+    --bg-main: #FFFFFF;
+    --bg-primary: #F8FAFC;
+    --bg-card: #FFFFFF;
+    --text-main: #3B4051;
+    --text-muted: #5C657A;
     --border-color: #E2E8F0; /* Bordes */
     
     /* Typography */
@@ -130,16 +136,14 @@ p {
 }
 
 .btn-primary {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     color: white;
-    box-shadow: 0 4px 14px 0 rgba(37, 99, 235, 0.39);
 }
 
 .btn-primary:hover {
-    background-color: var(--color-primary-dark);
-    color: white;
-    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.23);
+    box-shadow: 0 6px 20px rgba(66, 73, 91, 0.25);
     transform: translateY(-2px);
+    background-color: var(--color-secondary);
 }
 
 .btn-sm {
@@ -424,7 +428,7 @@ p {
 .feature-card:hover {
     transform: translateY(-5px);
     box-shadow: var(--shadow-md);
-    border-color: var(--color-primary-light);
+    border-color: var(--color-accent-light);
 }
 
 .feature-icon {
@@ -435,7 +439,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--color-primary-light);
+    background-color: var(--color-accent-light);
     border-radius: var(--radius-md);
 }
 
@@ -521,7 +525,7 @@ p {
 }
 
 .check-icon {
-    background-color: var(--color-primary);
+    background-color: var(--color-accent);
     color: white;
     width: 28px;
     height: 28px;
@@ -553,7 +557,7 @@ p {
 .highlight-card h4 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    color: var(--color-primary);
+    color: var(--color-accent);
 }
 
 .simple-list {

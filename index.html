@@ -27,7 +27,10 @@
                 <a href="#features">Herramientas</a>
                 <a href="#benefits">Beneficios</a>
             </nav>
-            <a href="https://apps.autocorp.mx:84/autocorp/login" class="btn btn-primary btn-sm">Ingresar al Sistema</a>
+            <div style="display: flex; align-items: center; gap: 1rem;">
+                <a href="https://apps.autocorp.mx:84/autocorp/login" class="btn btn-primary btn-sm">Ingresar al Sistema</a>
+                <img src="assets/logo-autocorp.png" alt="Autocorp" style="height: 45px; object-fit: contain;">
+            </div>
         </div>
     </header>
 
@@ -65,12 +68,65 @@
                 <p>Con información ordenada, actividades claras y seguimiento centralizado, el equipo puede trabajar con mayor control y menos retrabajo.</p>
             </div>
 
-            <!-- Espacio para el Carrusel -->
-            <div class="carousel-placeholder fade-up delay-1" style="max-width: 1000px; margin: 0 auto;">
-                <div class="image-placeholder" style="min-height: 450px; flex-direction: column; background-color: var(--bg-primary);">
-                    <span style="font-size: 3rem; margin-bottom: 1rem;">📸</span>
-                    <p style="font-size: 1.25rem; font-weight: 600; color: var(--text-muted); margin-bottom: 0;">[Espacio reservado para el Carrusel de Imágenes]</p>
-                    <span style="font-size: 0.9rem; color: #94A3B8; margin-top: 0.5rem;">Aquí se colocarán las capturas de pantalla mostrando cómo es el sistema por dentro.</span>
+            <!-- Espacio para el Carrusel (JS Powered) -->
+            <div class="carousel-wrapper fade-up delay-1" style="max-width: 1100px; margin: 0 auto; margin-top: 2rem;">
+                <div class="carousel-container">
+                    <div class="carousel">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <img src="assets/carousel-4.png" alt="Reporte de analítica CRM" />
+                                <div class="slide-content">
+                                    <h2>Detalles de leads</h2>
+                                    <p>Visualiza toda la información relevante de tus prospectos en un solo lugar y da seguimiento efectivo a cada oportunidad de negocio.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-slide">
+                                <img src="assets/carousel-1.png" alt="Reportes CRM" />
+                                <div class="slide-content">
+                                    <h2>Reportes</h2>
+                                    <p>Visualiza y mide el rendimiento de tus ventas en tiempo real.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/carousel-2.png" alt="Detalles de negocio CRM" />
+                                <div class="slide-content">
+                                    <h2>Integracion plan de operacion CRM</h2>
+                                    <p>Supervisa cada interacción con tus clientes y acelera el cierre de negocios con información en tiempo real.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="carousel-slide">
+                                <img src="assets/carousel-3.png" alt="Reporte de analítica CRM" />
+                                <div class="slide-content">
+                                    <h2>Reporte de analítica</h2>
+                                    <p>Toma decisiones inteligentes basadas en datos y métricas clave.</p>
+                                </div>
+                            </div>
+
+                            <div class="carousel-slide">
+                                <img src="assets/carousel-5.png" alt="Reporte de analítica CRM" />
+                                <div class="slide-content">
+                                    <h2>Calendario</h2>
+                                    <p>Gestiona todas tus citas con clientes desde un solo lugar y organiza tu agenda de forma eficiente para brindar un seguimiento oportuno y profesional.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <button class="carousel-control prev" aria-label="Anterior">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                    </button>
+                    <button class="carousel-control next" aria-label="Siguiente">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </button>
+
+                    <div class="carousel-indicators">
+                        <button class="indicator active" aria-label="Ir a slide 1"></button>
+                        <button class="indicator" aria-label="Ir a slide 2"></button>
+                        <button class="indicator" aria-label="Ir a slide 3"></button>
+                    </div>
                 </div>
             </div>
         </div>

@@ -144,6 +144,7 @@ p {
     box-shadow: 0 6px 20px rgba(66, 73, 91, 0.25);
     transform: translateY(-2px);
     background-color: var(--color-secondary);
+    color: #FFFFFF;
 }
 
 .btn-sm {
